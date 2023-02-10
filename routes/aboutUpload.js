@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const AboutMeSchema = require("../models/AboutMeSchema");
+const AboutMeSchema = require("../models/aboutMeSchema");
 
 router.get("/", async (req, res) => {
   AboutMeSchema.findOne().then((data) => res.send(data));
